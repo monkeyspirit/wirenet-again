@@ -54,12 +54,12 @@ def main():
     # shap.summary_plot(shap_values[0], np.asarray(X_test.tolist())[:100], max_display=20, sort=True)
 
 
-    data = open('output/AddString_5_Tequila.exe', "rb").read()
-
+    # data = open('output/AddString_5_Tequila.exe', "rb").read()
+    data = open('Win32.DarkTequila.exe', "rb").read()
     extractor = PEFeatureExtractor(2)
 
     features = np.array(extractor.feature_vector(data), dtype=np.float32)
-    with open('output/AddString_5_Tequila', 'wb') as f:
+    with open('output/DarkTequila_original', 'wb') as f:
         pickle.dump(features, f, protocol=pickle.HIGHEST_PROTOCOL)
 
     # with open('features', 'rb') as handle:
