@@ -1,0 +1,1178 @@
+!This program cannot be run in DOS mode.
+.text
+`.data
+.rsrc
+.BAT
+setupapi.dll
+setupx.dll
+Version
+AdvancedINF
+Reboot
+.INF
+SeShutdownPrivilege
+DelNodeRunDLL32
+advpack.dll
+wininit.ini
+Software\Microsoft\Windows\CurrentVersion\App Paths
+UPDFILE%lu
+VERCHECK
+INSTANCECHECK
+EXTRACTOPT
+TITLE
+<None>
+LICENSE
+POSTRUNPROGRAM
+RUNPROGRAM
+USRQCMD
+ADMQCMD
+SHOWWINDOW
+REBOOT
+FINISHMSG
+LoadString() Error.  Could not load string resource.
+CABINET
+PACKINSTSPACE
+FILESIZES
+UPROMPT
+IXP%03d.TMP
+i386
+mips
+alpha
+msdownld.tmp
+~TMP4352.TMP
+RegServer
+PSSj
+PSSSSSSh 
+t'Hu 
+7t	f
+@_^[]
+PVWh
+X_^[
+Pj@Ph
+VPj(
+SVWj@3
+SSSh
+PSSSV
+PPj@
+WQPS
+@PSj
+>\u	<\u
+PVVV
+u'VVV
+VPVVVVVV
+t#It
+Iu"hH
+X_^[
+98u:9x
+u59x
+u09x
+<Du:
+XPVj
+SWWS
+SVhK
+j SVh$
+SSh 
+u'h>
+u+95
+Wt-Ht
+tZHuO
+<:t	
+>\u	<\u
+j WVhJ
+X_^[]
+t2Ht
+Ht'-
+VVh>F
+_^[]
+QQPQ
+HtYHt
+r';P
+}VPW
+u(Sj
+t8SSh
+X_^[
+QSPSh
+VVj VVV
+SUV3
+?WVS
+Uj@UVh
+_^][
+4SVWhh
+u5Vh
+WWPQW
+dPj@
+dPj@
+@Pj@
+wD9}
+_^[]
+X_^]
+Ht'-2
+@Pj@
+u Sj
+X_^[
+WVUS
+t$,U
+t$,U
+[]^_
+t+<\u
+t>Iua
+_^[]
+$VWj
+Vj$h
+SUV3
+|WVS
+u#Uj
+j UVh
+_^][
+tH9-
+u@9-
+u'VUhl
+Hu h
+SVWj
+u!Pj
+u#Pj
+t;<\u
+ugVj
+PPhr,
+UVWS
+u#Uj
+_^][
+PSSSS
+X_^[
+8X_^[
+SVWj
+<"u$
+"AGG
+:ud8
+<At'<It
+<Su"
+<At	<Ut
+Et&HHt
+twj[W
+t_j]W
+t2PS
+_^[]
+f;\$
+L$(j
+t$,j$PQ
+MSCFt
+L$4f
+D$ f
+T$&f
+D$"f%
+D$"^
+D$ S
+L$ W
+T$(U
+L$$QS
+C|f%
+UtIj
+C|f%
+u?Uj
+C|f%
+]_^[
+(SVW
+]_^[
+MSCFt
+]_^[
+]_^[
+L$Hf
+D$Df9D$4u
+f9L$6t
+]_^[
+]_^[
+]_^[
+]_^[
+]_^[
+]_^[
+]_^[
+]_^[
+]_^[
+]_^[
+]_^[
+]_^[
+ElUf
+]@_^[
+]_^[
+~x9~0v
+F|PV
+FH+N03
+]_^[
+]_^[
+]_^[
+FHf9H
+SVWU
+tcfHWf
+]_^[
+]_^[
+]_^[
+]_^[
+~jO9
+t/WV
+GDWf
+]_^[
+]_^[
+]_^[
+]_^[
+]_^[
+]_^[
+]_^[
+]_^[
+]_^[
+]_^[
+]_^[
+]_^[
+D$ j
+D$$j
+]_^[
+]_^[
+]_^[
+UQRS
+T$(UPQRS
+T$0UPQRS
+]_^[
+]_^[
+]_^[
+V4QPR
+V4QPR
+V4QPR
+SQRV
+^ZY[
+SVWU
+]_^[
+]_^[
+]_^[
+D$<P
+LDIC
+D$<P
+D$<PRQ
+G(QSRP
+]_^[
+>_^[
+9LDICt
+9Q s
+D$ P
+D$ PRQ
+8LDICt
+>LDICt
+]_^[
+]_^[
+]_^[
+]_^[
+]_^[
+]_^[
+]_^[
+]_^[
+SQRVWU
+]_^ZY[
+]_^ZY[
+SVW3
+]_^[
+]_^[
+)CF;
+]_^[
+t$ WU
+9l$ 
+]_^[
+]_^[
+t$,WU
+D$(9D$8
+9L$,
+l$8+l$
+L$8EO
+L$8;L$(
+D$8#N
++D$(
+L$8]
+]_^[
+t$(WU
+L$$;
+9l$(
+;D$$
+]_^[
+]_^[
+SQRUVW
+_^]ZY[
+SVWU
+LT<f=
+DT<f=
+]_^[
+tD<f
+|$l3
+w^f;
+]_^[
+]_^[
+    
+RQSWVU
+ ]^_[YZ
+ ]^_[YZ
+FreeSid
+EqualSid
+AllocateAndInitializeSid
+GetTokenInformation
+OpenProcessToken
+AdjustTokenPrivileges
+LookupPrivilegeValueA
+RegCloseKey
+RegDeleteValueA
+RegOpenKeyExA
+RegSetValueExA
+RegQueryValueExA
+RegCreateKeyExA
+RegQueryInfoKeyA
+ADVAPI32.dll
+LocalFree
+CloseHandle
+LocalAlloc
+GetLastError
+GetCurrentProcess
+lstrcatA
+GetFileAttributesA
+GetShortPathNameA
+GetPrivateProfileStringA
+GetPrivateProfileIntA
+lstrlenA
+lstrcmpiA
+lstrcpyA
+GetModuleFileNameA
+FreeLibrary
+GetProcAddress
+LoadLibraryA
+GetSystemDirectoryA
+RemoveDirectoryA
+FindClose
+FindNextFileA
+DeleteFileA
+SetFileAttributesA
+lstrcmpA
+FindFirstFileA
+_lclose
+_llseek
+_lopen
+GetWindowsDirectoryA
+CreateDirectoryA
+GlobalFree
+GlobalUnlock
+GlobalLock
+GlobalAlloc
+ExitProcess
+GetModuleHandleA
+GetStartupInfoA
+GetCommandLineA
+LoadResource
+FindResourceA
+CreateMutexA
+SetEvent
+CreateEventA
+SetCurrentDirectoryA
+CreateThread
+ResetEvent
+TerminateThread
+GetVersionExA
+FormatMessageA
+GetExitCodeProcess
+WaitForSingleObject
+CreateProcessA
+GetTempPathA
+FreeResource
+LockResource
+SizeofResource
+CreateFileA
+ReadFile
+WriteFile
+SetFilePointer
+SetFileTime
+LocalFileTimeToFileTime
+DosDateTimeToFileTime
+GetTempFileNameA
+GetSystemInfo
+GetDiskFreeSpaceA
+GetDriveTypeA
+lstrcpynA
+GetVolumeInformationA
+GetCurrentDirectoryA
+LoadLibraryExA
+KERNEL32.dll
+GetDeviceCaps
+GDI32.dll
+MessageBeep
+SetDlgItemTextA
+LoadStringA
+GetDesktopWindow
+EndDialog
+wsprintfA
+ExitWindowsEx
+CharNextA
+CharUpperA
+SetWindowLongA
+GetWindowLongA
+CallWindowProcA
+GetDlgItem
+SetForegroundWindow
+SetWindowTextA
+SendDlgItemMessageA
+EnableWindow
+GetDlgItemTextA
+SendMessageA
+DispatchMessageA
+MsgWaitForMultipleObjects
+PeekMessageA
+MessageBoxA
+CharPrevA
+SetWindowPos
+ReleaseDC
+GetDC
+GetWindowRect
+ShowWindow
+DialogBoxIndirectParamA
+USER32.dll
+COMCTL32.dll
+VerQueryValueA
+GetFileVersionInfoA
+GetFileVersionInfoSizeA
+VERSION.dll
+IsDBCSLeadByte
+WEXTRACT
+*MEMCAB
+rundll32.exe %s,InstallHinfSection %s 128 %s
+SHELL32.DLL
+SHGetSpecialFolderLocation
+SHBrowseForFolder
+SHGetPathFromIDList
+DefaultInstall
+DefaultInstall
+DoInfInstall
+Software\Microsoft\Windows\CurrentVersion\RunOnce
+System\CurrentControlSet\Control\Session Manager
+PendingFileRenameOperations
+System\CurrentControlSet\Control\Session Manager\FileRenameOperations
+wextract_cleanup%d
+%s /D:%s
+rundll32.exe %sadvpack.dll,DelNodeRunDLL32 "%s"
+Command.com /c %s
+WEXTRACT
+*MEMCAB
+rundll32.exe %s,InstallHinfSection %s 128 %s
+SHELL32.DLL
+SHGetSpecialFolderLocation
+SHBrowseForFolder
+SHGetPathFromIDList
+DefaultInstall
+DefaultInstall
+DoInfInstall
+RIFF
+AVI LIST
+hdrlavih8
+G\AN
+LIST
+strlstrh8
+vidsRLE 
+strfh
+vedt
+JUNK
+LISTv$
+movi00dc(
+00dc
+00dc
+00dcR
+00dc
+00dc\
+00dc$
+00dc&
+00dc$
+00dc 
+00dc$
+00dc
+00dc
+00dc
+00dc<
+00dcX
+00dc
+00dc
+00dcz
+00dcr
+00dcb
+00dc8
+00dc
+00dc
+00dc
+00dc
+idx1
+00dc
+00dc
+00dc
+00dc
+00dc
+00dc
+00dc
+00dc
+00dc
+00dc
+00dc
+00dc
+00dc
+00dc
+00dc
+00dc
+00dc
+00dc
+00dc
+00dc
+00dc
+00dc
+00dc
+00dc
+00dc
+00dc
+33333330
+{{{{{{{3
+{{{{{{{33
+{{{{{{{330
+{{{{{{{330
+{{{{{{{330
+3333333
+30ww
+33333333
+wwwwwwwwwww
+DDDDDD@
+DDDDDDGpw
+DDDDDDGpw
+DDDDDDDDDDD
+wwwwwwwwwww
+3330
+{{{3
+{{{3
+3333
+DDDpp
+MSCF
+.6v 
+setup.exe
+settings.ini
+"Sp$
+XYYY
+dy:azOYwd
+@"dP3
+b [l9
+T%@TE
+Vo-f+
+Wa@S
+=/Pn
+#nc`
+WDT[
+MZDIh/o
+m>tobS
+l|%_
+!A}\W
+|MGl
+K]*"
+ahqn
+K2;cB
+rIqx6
+(CBppHw;
+Q-rW(
+LNJH
+U~4:
+Hu%,6"
+jQ5T
+C[=x
+#3zz
+-sX`%
+3F#t
+a"Fp
+e@KX
+t4Ig(7PJ
+DiO#
+t5j	R
+GQ}QO7
+<(k[
+p.[6
+" 7R|
+w4RIgOs
+,6~-i
+829j
+0B	JF
+qhT(B
+\L z
+wZeS
+LXB#X
+<9};6
+IqjJX
+b/21
+wYe]
+x)HG5
+\	z?-
+5i+!/
+7&bW
+ab$)\
+;?:v&
+SG~u{.
+UvR|
+}[um
+ottN}
+fda}
+NK	6^
+/:8f
+1}Fd
+*4Rl
+)rAvgi
+\[>"H
+p_	M
+9J$~
+;	;$|
+DV)'
+jWJ<	
+	50A
+q;	Z
+"Nc" 
+ve	OG
+}S>WG
+?leY3`uu
+IMV:p
+_c'N
+Hi(71
+<"[_
+<{\?
+<'(z
+gk9'!I
+0@PMnl
+YQHM
+r,*:_
+`>qj
+OG\@
+.(pX8zQ
+)DL^m
+)G)7
+qO[	
+D7 K
+]eOI`
+>I]w
+dn@T
+f3|f
+3		4
+on]Z%
+{Jg=
+'VqF
+e:*|
+o!1~
+)-iw
+c6\[
+RBX,~M
+1-@z
+/D\IB
+_-Q|MoY
+4M'.o
+_D!f	
+pD*CP
+,.#"{
+Z(Fj
+)qb>
+BoPBjI
+{V<B
+bJDi
+_tYs
+!Vhx%
+Md:0
+_2Cy
+MZq_
+1n5W
+)[r5r
+~r83
+ 1`7NH
+y^E]'
+]T9\
+i*Dt.ay&
+t}v6
+>I"5
+lF'8
+S%_7X:B
+?[H#
+o(DE
+h.8}
+$2b[T
+v<yU
+}h{%T
+X[r$	8c
+7<1?/
+z6U^U
+~Jx)g_
+\'	_4
+z!]f
+_di#
+%L4-*
+R*>/d
+b?"b
+Rqg'
+}r$GYj"
+Zu1s
+5jG%
+/R\?S
+),{t
+]!Iv
+-,2y;n
+xgke
+MQ!b
+*LM~
+9u9b
+#{pkOm
+iAlt`
+&8"	
+hO7|
+9tTl
+>Ma`
+Zy[3
+Z,ujs
+CBx|
+9!XU
+"r}G
+hZbb
+&;(oVc
+%D}G
+q1e(
+{L2J>
+mZ5"
+8e.R|
+|[S)
+`T#j>gGT
+I?wgt
+6\xy1
+L42d%
+HyM 
+gj-hO
+|&.7N
+Ec:)
+1|3X
+ME~h
+M}y{
+ZaGKq
+9iCj:-j
+j@^#
+!e3l
+ET05c
+2/U.
+f#ykT
+\BL-T<TK
+XMKLx
+RG(FT~!F
+QTC\
+D:)x
+~U?U/
+XHU_
+!Jdp
+&yt%
+phV|~
++|e&dW
+"(f1X
+'^t_
+zO|l
+hI:W
+C>Jf
+Tb<F
+O|2u9
+zgHCL?"
+piNv
+*j A
+id/*
+;\3Y
+V;c4
+<:$;
+m &"
+&()bfBMf
+L4CTA\
+,"r3
+_sGJ
+_mN7
+j!S<L
+?o9yH-
+=-B`
+GL<!
+hPE}
+r|U8
+nCcp
+!&W3
+193V
+nywX
+?4PF
+2+Ew
+uVT%k
+4mSjy
+}Px2^
+?O	S
+Z0"c
+A>y*
+ZzGW
+(;R{
+%]h]=
+Gx<_&
++!Bx?
+!4x[(
+#}NO
+{6 YX
+_]AO,
+YTSKt
+s?MN
+J-.C
+Zsl9%
+b<qk
+ls@\e/
+i(	tX}
+}R&xA
+T~Te
+!^N 
+pD9T
+%5Xt}}V
+s|?M
+w\{XP
+d'_s
+YwLE
+Hrk|%c\
+?T*[
+woux=
+U}nr
+{0|@<5B
+sdt*
+eG[l
+5T B
+uaw!
+}D$!
+%43?h
+ii#U8
+yFV9f
+iRmV
+{LIR
+/u%*!_
+ l($
+<,x\
+G?vu
+	s	;
+DkSG
+zx+A5
+<dBt
+<#MA
+M9n<
+>6uj;k
+_o3V
+d73N
+mQ0.
+Gs?x
+Tod1
+_&uq4
+`4az
+<		C)Q
+;mU^j
+K>./
+| 76
+{S:3
+Yc9x#j
+;t1Yx[
+v&O4
+uP:g)
+8Tcn:2
+1wr?N
+@NLx_
+W5|?
+qyxo
+}ZVV
+B|Gn
+}{5#/
+4A(Mg
+zAZ2
+Vt"[u
+ht0x
+874{
+26([,
+?INn
+k:n!I
+tr2IH,
+6Hk<1\lT
+aM.h
+6Y"r:
+,QhfA
+V%8O-
+O5w>%k
+_FZX
+G]5C
+((?(
+N}@&
+<None>
+PEND-USER LICENSE AGREEMENT FOR MICROSOFT SOFTWARE
+IMPORTANT
+READ CAREFULLY: This End-User License Agreement (
+EULA
+) is a legal agreement between you (either an individual or a single entity) and Microsoft Corporation for the Microsoft software that accompanies this EULA, which includes computer software and may include associated media, printed materials, 
+online
+ or electronic documentation, and Internet-based services (
+Software
+).  An amendment or addendum to this EULA may accompany the Software.  YOU AGREE TO BE BOUND BY THE TERMS OF THIS EULA BY INSTALLING, COPYING, OR OTHERWISE USING THE SOFTWARE. IF YOU DO NOT AGREE, DO NOT INSTALL, COPY, OR USE THE SOFTWARE.
+1.	GRANT OF LICENSE.  Microsoft grants you the following rights provided that you comply with all terms and conditions of this EULA:
+	1.1	Microsoft grants you a personal, nonexclusive, royalty-free license to install and use the Software for design, development, and testing purposes.  You may install and use the Software on an unlimited number of computers so long as you are the only individual using the Software.
+        1.2	Solely with respect to those portions of the Software identified as sample images or sample web pages (
+MS Samples
+), Microsoft also grants you  a limited, nonexclusive, royalty-free license to: (a)
+use and modify the source code version of those portions of the MS Samples for the sole purposes of designing, developing, and testing your software product(s), and (b)
+ to reproduce and distribute the MS Samples, along with any modifications thereof, in object and/or source code form.  For applicable redistribution requirements for MS Samples, see Section
+2 below.
+2.	DESCRIPTION OF OTHER RIGHTS AND LIMITATIONS 
+        2.1	If you choose to redistribute the MS Samples, you agree:  (i) to distribute the MS Samples only as a part of a software application product developed by you (
+Licensee Software
+); (ii)
+ not to use Microsoft
+s name, logo, or trademarks to market the Licensee Software; (iii)
+to display your own valid copyright notice which shall be sufficient to protect Microsoft
+s copyright in the MS Samples; (iv)
+to indemnify, hold harmless, and defend Microsoft from and against any claims or lawsuits, including attorney
+s fees, that arise or result from the use or distribution of the Licensee Software; (v)
+not to permit further distribution of the MS Samples by your end users; and (vi)
+that Microsoft reserves all rights not expressly granted.  
+        2.2	If you use the MS Samples, then the following also applies.  Your license rights to the MS Samples are conditioned upon your not (i) creating derivative works of the MS Samples in any manner that would cause the MS Samples in whole or in part to become subject to any of the terms of an Excluded License; or (ii) distributing the MS Samples (or derivative works thereof) in any manner that would cause the MS Samples to become subject to any of the terms of an Excluded License.  An 
+Excluded License
+ is any license that requires as a condition of use, modification and/or distribution of software subject to the Excluded License, that such software or other software combined and/or distributed with such software be (x) disclosed or distributed in source code form; (y)
+licensed for the purpose of making derivative works; or (z)
+redistributable at no charge. 
+3.	RESERVATION OF RIGHTS AND OWNERSHIP.  Microsoft reserves all rights not expressly granted to you in this EULA.  The Software is protected by copyright and other intellectual property laws and treaties. Microsoft or its suppliers own the title, copyright, and other intellectual property rights in the Software.  The Software is licensed, not sold.
+4.	LIMITATIONS ON REVERSE ENGINEERING, DECOMPILATION, AND DISASSEMBLY.  You may not reverse engineer, decompile, or disassemble the Software, except and only to the extent that such activity is expressly permitted by applicable law notwithstanding this limitation.
+5.	SUPPORT SERVICES.   No technical support will be provided for the Software.
+6.	U.S. GOVERNMENT LICENSE RIGHTS. All Software provided to the U.S. Government pursuant to solicitations issued on or after December 1, 1995 is provided with the commercial license rights and restrictions described elsewhere herein.  All Software provided to the U.S. Government pursuant to solicitations issued prior to December 1, 1995 is provided with 
+Restricted Rights
+ as provided for in FAR, 48 CFR 52.227-14 (JUNE 1987) or DFAR, 48 CFR 252.227-7013 (OCT 1988), as applicable. 
+7.	EXPORT RESTRICTIONS.  You acknowledge that the Software is subject to U.S. export jurisdiction.  You agree to comply with all applicable international and national laws that apply to the Software, including the U.S. Export Administration Regulations, as well as end-user, end-use, and destination restrictions issued by U.S. and other governments.   For additional information see <http://www.microsoft.com/exporting/>.
+8.	SOFTWARE TRANSFER.  The initial user of the Software may make a one-time permanent transfer of this EULA and Software to another end user, provided the initial user retains no copies of the Software.  This transfer must include all of the Software (including all component parts, the media and printed materials, any upgrades, this EULA, and, if applicable, the Certificate of Authenticity).  The transfer may not be an indirect transfer, such as a consignment.  Prior to the transfer, the end user receiving the Software must agree to all the EULA terms.
+9.	TERMINATION.  Without prejudice to any other rights, Microsoft may terminate this EULA if you fail to comply with the terms and conditions of this EULA. In such event, you must destroy all copies of the Software and all of its component parts.
+10.	DISCLAIMER OF WARRANTIES.   TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, MICROSOFT AND ITS SUPPLIERS PROVIDE TO YOU THE  SOFTWARE, AND SUPPORT SERVICES (IF ANY) AS IS AND WITH ALL FAULTS; AND MICROSOFT AND ITS SUPPLIERS HEREBY DISCLAIM ALL OTHER WARRANTIES AND CONDITIONS, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, ANY (IF ANY) IMPLIED WARRANTIES, DUTIES OR CONDITIONS OF MERCHANTABILITY, OF FITNESS FOR A PARTICULAR PURPOSE, OF RELIABILITY OR AVAILABILITY, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OF WORKMANLIKE EFFORT, OF LACK OF VIRUSES, AND OF LACK OF NEGLIGENCE, ALL WITH REGARD TO THE  SOFTWARE, AND THE PROVISION OF OR FAILURE TO PROVIDE SUPPORT OR OTHER SERVICES, INFORMATION, SOFTWARE, AND RELATED CONTENT THROUGH THE  SOFTWARE OR OTHERWISE ARISING OUT OF THE USE OF THE  SOFTWARE.  ALSO, THERE IS NO WARRANTY OR CONDITION OF TITLE, QUIET ENJOYMENT, QUIET POSSESSION, CORRESPONDENCE TO DESCRIPTION OR NON-INFRINGEMENT WITH REGARD TO THE  SOFTWARE.  
+11.	EXCLUSION OF INCIDENTAL, CONSEQUENTIAL AND CERTAIN OTHER DAMAGES.  TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL MICROSOFT OR ITS SUPPLIERS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, PUNITIVE, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER (INCLUDING, BUT NOT LIMITED TO, DAMAGES FOR LOSS OF PROFITS OR CONFIDENTIAL OR OTHER INFORMATION, FOR BUSINESS INTERRUPTION, FOR PERSONAL INJURY, FOR LOSS OF PRIVACY, FOR FAILURE TO MEET ANY DUTY INCLUDING OF GOOD FAITH OR OF REASONABLE CARE, FOR NEGLIGENCE, AND FOR ANY OTHER PECUNIARY OR OTHER LOSS WHATSOEVER) ARISING OUT OF OR IN ANY WAY RELATED TO THE USE OF OR INABILITY TO USE THE PRODUCT, THE PROVISION OF OR FAILURE TO PROVIDE SUPPORT OR OTHER SERVICES, INFORMATON, SOFTWARE, AND RELATED CONTENT THROUGH THE PRODUCT OR OTHERWISE ARISING OUT OF THE USE OF THE PRODUCT, OR OTHERWISE UNDER OR IN CONNECTION WITH ANY PROVISION OF THIS EULA, EVEN IN THE EVENT OF THE FAULT, TORT (INCLUDING NEGLIGENCE), MISREPRESENTATION, STRICT LIABILITY, BREACH OF CONTRACT OR BREACH OF WARRANTY OF MICROSOFT OR ANY SUPPLIER, AND EVEN IF MICROSOFT OR ANY SUPPLIER HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. 
+12.	LIMITATION OF LIABILITY AND REMEDIES.  NOTWITHSTANDING ANY DAMAGES THAT YOU MIGHT INCUR FOR ANY REASON WHATSOEVER (INCLUDING, WITHOUT LIMITATION, ALL DAMAGES REFERENCED ABOVE AND ALL DIRECT OR GENERAL DAMAGES IN CONTRACT OR ANYTHING ELSE), THE ENTIRE LIABILITY OF MICROSOFT AND ANY OF ITS SUPPLIERS UNDER ANY PROVISION OF THIS SUPPLEMENTAL EULA AND YOUR EXCLUSIVE REMEDY FOR ALL OF THE FOREGOING SHALL BE LIMITED TO THE GREATER OF THE ACTUAL DAMAGES YOU INCUR IN REASONABLE RELIANCE ON THE SOFTWARE UP TO THE AMOUNT ACTUALLY PAID BY YOU FOR THE  SOFTWARE OR U.S.$5.00.  THE FOREGOING LIMITATIONS, EXCLUSIONS AND DISCLAIMERS SHALL APPLY TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, EVEN IF ANY REMEDY FAILS ITS ESSENTIAL PURPOSE.
+13.	APPLICABLE LAW.  If you acquired this Software in the United States, this EULA is governed by the laws of the State of Washington.  If you acquired this Software in Canada, unless expressly prohibited by local law, this EULA is governed by the laws in force in the Province of Ontario, Canada; and, in respect of any dispute which may arise hereunder, you consent to the jurisdiction of the federal and provincial courts sitting in Toronto, Ontario. If you acquired this Software in the Eurpean Union, Iceland, Norway , or Switzerland, then local law applies.  If you acquired this Software in any other country,  then local law may apply. 
+14.	ENTIRE AGREEMENT; SEVERABILITY.  This EULA (including any addendum or amendment to this EULA which is included with the Software) are the entire agreement between you and Microsoft relating to the Software and the support services (if any) and they supersede all prior or contemporaneous oral or written communications,  proposals and representations with respect to the Software or any other subject matter covered by this EULA.  To the extent the terms of any Microsoft policies or programs for support services conflict with the terms of this EULA, the terms of this EULA shall control.  If any provision of this EULA is held to be void, invalid, unenforceable or illegal, the other provisions shall continue in full force and effect.
+Si vous avez acquis votre produit Microsoft au CANADA, le texte suivante s
+applique
+NI DE GARANTIES.  DANS LA MESURE MAXIMALE PERMISE PAR LES LOIS APPLICABLES, LE LOGICIEL ET LES SERVICES DE SOUTIEN TECHNIQUE (LE CAS 
+ANT) SONT FOURNIS TELS QUELS ET AVEC TOUS LES D
+FAUTS PAR MICROSOFT ET SES FOURNISSEURS, LESQUELS PAR LES PR
+SENTES D
+NIENT TOUTES AUTRES GARANTIES ET CONDITIONS EXPRESSES, IMPLICITES OU EN VERTU DE LA LOI, NOTAMMENT, MAIS SANS LIMITATION, (LE CAS 
+ANT) LES GARANTIES, DEVOIRS OU CONDITIONS IMPLICITES DE QUALIT
+ MARCHANDE, D
+ADAPTATION 
+ UNE FIN PARTICULI
+RE,  DE FIABILIT
+ OU DE DISPONIBILIT
+EXACTITUDE OU D
+EXHAUSTIVIT
+ DES R
+PONSES, DES R
+SULTATS, DES EFFORTS D
+PLOY
+S SELON LES R
+GLES DE L
+ART, D
+ABSENCE DE VIRUS ET D
+ABSENCE DE N
+GLIGENCE, LE TOUT 
+GARD DU LOGICIEL ET DE LA PRESTATION OU DE L
+OMISSION DE LA  PRESTATION DES SERVICES DE SOUTIEN TECHNIQUE OU 
+GARD DE LA FOURNITURE OU DE L
+OMISSION DE LA FOURNITURE DE TOUS AUTRES SERVICES, RENSEIGNEMENTS, LOGICIELS, ET CONTENU QUI S
+Y RAPPORTE  GR
+CE AU LOGICIEL OU PROVENANT AUTREMENT DE L
+UTILISATION DU LOGICIEL . PAR AILLEURS, IL N
+Y A AUCUNE GARANTIE OU CONDITION QUANT AU TITRE DE PROPRI
+ LA JOUISSANCE OU LA POSSESSION PAISIBLE, 
+ LA CONCORDANCE 
+ UNE DESCRIPTION NI QUANT 
+ UNE ABSENCE DE CONTREFA
+ON CONCERNANT LE LOGICIEL.
+EXCLUSION DES DOMMAGES ACCESSOIRES, INDIRECTS ET DE CERTAINS AUTRES DOMMAGES. DANS LA MESURE MAXIMALE PERMISE PAR LES LOIS APPLICABLES, EN AUCUN CAS MICROSOFT OU SES FOURNISSEURS NE SERONT RESPONSABLES DES DOMMAGES SP
+CIAUX, CONS
+CUTIFS, ACCESSOIRES OU INDIRECTS DE QUELQUE NATURE QUE CE SOIT (NOTAMMENT, LES DOMMAGES 
+GARD DU MANQUE 
+ GAGNER OU DE LA DIVULGATION DE RENSEIGNEMENTS CONFIDENTIELS OU AUTRES, DE LA PERTE D
+EXPLOITATION, DE BLESSURES CORPORELLES, DE LA VIOLATION DE LA VIE PRIV
+E, DE L
+OMISSION DE REMPLIR TOUT DEVOIR, Y COMPRIS D
+AGIR DE BONNE FOI OU D
+EXERCER UN SOIN RAISONNABLE, DE LA N
+GLIGENCE ET DE TOUTE AUTRE PERTE P
+CUNIAIRE OU AUTRE PERTE DE QUELQUE NATURE QUE CE SOIT) SE RAPPORTANT DE QUELQUE MANI
+RE QUE CE SOIT 
+UTILISATION DU LOGICIEL OU 
+INCAPACIT
+ DE S
+EN SERVIR, 
+ LA PRESTATION OU 
+OMISSION DE LA PRESTATION DE SERVICES DE SOUTIEN TECHNIQUE OU 
+ LA FOURNITURE OU 
+OMISSION DE LA FOURNITURE DE TOUS AUTRES SERVICES, RENSEIGNEMENTS, LOGICIELS, ET CONTENU QUI S
+Y RAPPORTE  GR
+CE AU LOGICIEL OU PROVENANT AUTREMENT DE L
+UTILISATION DU LOGICIEL OU AUTREMENT AUX TERMES DE TOUTE DISPOSITION DE LA PR
+SENTE CONVENTION OU RELATIVEMENT 
+ UNE TELLE DISPOSITION, M
+ME EN CAS DE FAUTE, DE D
+LIT CIVIL (Y COMPRIS LA N
+GLIGENCE), DE RESPONSABILIT
+ STRICTE, DE VIOLATION DE CONTRAT OU DE VIOLATION DE GARANTIE DE MICROSOFT OU DE TOUT FOURNISSEUR ET M
+ME SI MICROSOFT OU TOUT FOURNISSEUR A 
+ AVIS
+ DE LA POSSIBILIT
+ DE TELS DOMMAGES.
+LIMITATION DE RESPONSABILIT
+ ET RECOURS. MALGR
+ LES DOMMAGES QUE VOUS PUISSIEZ SUBIR POUR QUELQUE MOTIF QUE CE SOIT (NOTAMMENT, MAIS SANS LIMITATION, TOUS LES DOMMAGES SUSMENTIONN
+S ET TOUS LES DOMMAGES DIRECTS OU G
+RAUX OU AUTRES), LA SEULE RESPONSABILIT
+ DE MICROSOFT ET DE L
+UN OU L
+AUTRE DE SES FOURNISSEURS AUX TERMES DE TOUTE DISPOSITION DE LA PR
+SENTE CONVENTION ET VOTRE RECOURS EXCLUSIF 
+GARD DE TOUT CE QUI PR
+DE SE LIMITE AU PLUS 
+ ENTRE LES MONTANTS SUIVANTS
+: LE MONTANT QUE VOUS AVEZ R
+ELLEMENT PAY
+ POUR LE LOGICIEL OU 5,00
+$US. LES LIMITES, EXCLUSIONS ET D
+NIS QUI PR
+DENT (Y COMPRIS LES CLAUSES CI-DESSUS), S
+APPLIQUENT DANS LA MESURE MAXIMALE PERMISE PAR LES LOIS APPLICABLES, M
+ME SI TOUT RECOURS N
+ATTEINT PAS SON BUT ESSENTIEL.
+ moins que cela ne soit prohib
+ par le droit local applicable, la pr
+sente Convention est r
+gie par les lois de la province d
+Ontario, Canada. Vous consentez 
+ la comp
+tence des tribunaux f
+raux et provinciaux si
+geant 
+ Toronto, dans  la province d
+Ontario.
+Au cas o
+ vous auriez des questions concernant cette licence ou que vous d
+siriez vous mettre en rapport avec Microsoft pour quelque raison que ce soit, veuillez utiliser l
+information contenue dans le Logiciel pour contacter la filiale de Microsoft desservant votre pays, ou visitez Microsoft sur le World Wide Web 
+ http://www.microsoft.com.
+<None>
+.NET Framework 1.1 Bootstrapper Sample
+P<None>
+PADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADD
+exe\wextract.dbg
+.exe
+Z0X03
+>0!0	
+VeriSign Trust Network1
+VeriSign, Inc.1,0*
+#VeriSign Time Stamping Service Root1402
++NO LIABILITY ACCEPTED, (c)97 VeriSign, Inc.0
+970512000000Z
+040107235959Z0
+VeriSign Trust Network1
+VeriSign, Inc.1,0*
+#VeriSign Time Stamping Service Root1402
++NO LIABILITY ACCEPTED, (c)97 VeriSign, Inc.0
+h|,-.
+F=P4
+zm\ob
+VeriSign Trust Network1
+VeriSign, Inc.1,0*
+#VeriSign Time Stamping Service Root1402
++NO LIABILITY ACCEPTED, (c)97 VeriSign, Inc.0
+010228000000Z
+040106235959Z0
+VeriSign, Inc.1
+VeriSign Trust Network1;09
+2Terms of use at https://www.verisign.com/rpa (c)011'0%
+VeriSign Time Stamping Service0
+/oc 
+TBZze{
+40200
+$http://ocsp.verisign.com/ocsp/status0	
+=0;09
+0*0(
+https://www.verisign.com/rpa0
+Oc`,
+|z 02
+)]@U
+6:9e
+0p1+0)
+"Copyright (c) 1997 Microsoft Corp.1
+Microsoft Corporation1!0
+Microsoft Root Authority0
+970110070000Z
+201231070000Z0p1+0)
+"Copyright (c) 1997 Microsoft Corp.1
+Microsoft Corporation1!0
+Microsoft Root Authority0
+ >|Q
+kzb#
+`-wL
+zmtN
+r0p1+0)
+"Copyright (c) 1997 Microsoft Corp.1
+Microsoft Corporation1!0
+Microsoft Root Authority
++7%-
+Z38nM
+0p1+0)
+"Copyright (c) 1997 Microsoft Corp.1
+Microsoft Corporation1!0
+Microsoft Root Authority0
+001210080000Z
+051112080000Z0
+Washington1
+Redmond1
+Microsoft Corporation1+0)
+"Copyright (c) 2000 Microsoft Corp.1#0!
+Microsoft Code Signing PCA0
+/{m7#M
+9NnT
+0ZGud
+:doD
+#N`)
+Hzk*
+a9vn
+r0p1+0)
+"Copyright (c) 1997 Microsoft Corp.1
+Microsoft Corporation1!0
+Microsoft Root Authority
+Ej9Y
+8d"B
+^2i:
+Washington1
+Redmond1
+Microsoft Corporation1+0)
+"Copyright (c) 2000 Microsoft Corp.1#0!
+Microsoft Code Signing PCA0
+020525005548Z
+031125010548Z0
+Washington1
+Redmond1
+Microsoft Corporation1+0)
+"Copyright (c) 2002 Microsoft Corp.1
+Microsoft Corporation0
+L?|w.
+K?Y^
+hWcr
+C&*y
+r0p1+0)
+"Copyright (c) 1997 Microsoft Corp.1
+Microsoft Corporation1!0
+Microsoft Root Authority
+C0A0?
+9http://crl.microsoft.com/pki/crl/products/CodeSignPCA.crl0
+~EUv
+Washington1
+Redmond1
+Microsoft Corporation1+0)
+"Copyright (c) 2000 Microsoft Corp.1#0!
+Microsoft Code Signing PCA
+&http://msdn.microsoft.com/netframework0
+w-Xr<)(
+B_9w
+8||r9
+VeriSign Trust Network1
+VeriSign, Inc.1,0*
+#VeriSign Time Stamping Service Root1402
++NO LIABILITY ACCEPTED, (c)97 VeriSign, Inc.
+zm\ob
+030516173910Z0
+zGf7
+chuu
