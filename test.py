@@ -157,8 +157,8 @@ class MalConvModel(object):
         _inp = torch.from_numpy(np.frombuffer(bytez, dtype=np.uint8)[np.newaxis, :])
         with torch.no_grad():
             outputs = F.softmax(self.model(_inp), dim=-1)
-
-        return outputs.detach().numpy()[0, 1] > self.thresh
+        # return outputs.detach().numpy()[0, 1] > self.thresh
+        return outputs.detach().numpy()[0, 1]
 
 MALCONV_MODEL_PATH = 'malconv/malconv.checkpoint'
 
@@ -168,11 +168,13 @@ def get_predict_models(name, bytez):
     print('--------------------')
     print(f'PE name: {name}')
     malconv = MalConvModel(MALCONV_MODEL_PATH, thresh=0.5)
-    print(f'{malconv.__name__}: {malconv.predict(bytez)}')
+    malconv_score = malconv.predict(bytez)
+    print(f'{malconv.__name__}: {malconv_score} {malconv_score> malconv.thresh}')
     model = lgb.Booster(model_file="ember2018/ember_model_2018.txt")
     model.params['objective'] = 'binary'
-
-    print(f'ember : {ember.predict_sample(model, bytez) > 0.8336}')
+    # Ember  thresh > 0.8336
+    ember_score = ember.predict_sample(model, bytez)
+    print(f'ember : {ember_score} {ember_score>0.8336}')
     print('--------------------')
 
 if __name__ == '__main__':
