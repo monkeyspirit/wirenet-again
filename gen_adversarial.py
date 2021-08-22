@@ -43,8 +43,14 @@ def reconstruction(x, y):
 
 
 
-def fgsm_attack(bytez, malconv):
+def fgsm_attack(bytez):
 
+
+    # Create malconv
+    malconv = MalConv(channels=256, window_size=512, embd_size=8).train()
+    weights = torch.load('malconv/malconv.checkpoint', map_location='cpu')
+    malconv.load_state_dict(weights['model_state_dict'])
+    malconv.eval()
 
     # Create optimizer
     opt = torch.optim.SGD(malconv.parameters(), lr=0.01, momentum=0.9)
@@ -130,59 +136,5 @@ def fgsm_attack(bytez, malconv):
 
 if __name__ == '__main__':
     DarkTequila = open('Win32.DarkTequila.exe', "rb").read()
-    # Create malconv
-    malconv = MalConv(channels=256, window_size=512, embd_size=8).train()
-    weights = torch.load('malconv/malconv.checkpoint', map_location='cpu')
-    malconv.load_state_dict(weights['model_state_dict'])
-    malconv.eval()
 
-
-    x = np.frombuffer(DarkTequila, dtype=np.uint8)
-    # Create optimizer
-    opt = torch.optim.SGD(malconv.parameters(), lr=0.01, momentum=0.9)
-    # Compute payload size
-    payload_size = kernel_size + (kernel_size - np.mod(len(DarkTequila), kernel_size))
-    # Creat embedding matrix
-    embed = malconv.embd
-    m = embed(torch.arange(0, 256))
-    # Make label from target
-    label = torch.tensor([target], dtype=torch.long)
-    perturbation = np.random.randint(0, 256, payload_size, dtype=np.uint8)
-    # Make input of malconv
-    inp = torch.from_numpy(np.concatenate([x, perturbation])[np.newaxis, :]).float()
-    inp_adv = inp.requires_grad_()
-    embed = malconv.embd
-    embd_x = embed(inp_adv.long()).detach()
-    embd_x.requires_grad = True
-    embd_x.retain_grad()
-    outputs = malconv(embd_x)
-    results = F.softmax(outputs, dim=1)
-    r = results.detach().numpy()[0]
-    print('Benign: {:.5g}'.format(r[0]), ', Malicious: {:.5g}'.format(r[1]))
-
-
-    fgsm_attack(DarkTequila, malconv)
-
-    DarkTequila = open('test_DarkTequila.exe', "rb").read()
-    x = np.frombuffer(DarkTequila, dtype=np.uint8)
-    # Create optimizer
-    opt = torch.optim.SGD(malconv.parameters(), lr=0.01, momentum=0.9)
-    # Compute payload size
-    payload_size = kernel_size + (kernel_size - np.mod(len(DarkTequila), kernel_size))
-    # Creat embedding matrix
-    embed = malconv.embd
-    m = embed(torch.arange(0, 256))
-    # Make label from target
-    label = torch.tensor([target], dtype=torch.long)
-    perturbation = np.random.randint(0, 256, payload_size, dtype=np.uint8)
-    # Make input of malconv
-    inp = torch.from_numpy(np.concatenate([x, perturbation])[np.newaxis, :]).float()
-    inp_adv = inp.requires_grad_()
-    embed = malconv.embd
-    embd_x = embed(inp_adv.long()).detach()
-    embd_x.requires_grad = True
-    embd_x.retain_grad()
-    outputs = malconv(embd_x)
-    results = F.softmax(outputs, dim=1)
-    r = results.detach().numpy()[0]
-    print('Benign: {:.5g}'.format(r[0]), ', Malicious: {:.5g}'.format(r[1]))
+    fgsm_attack(DarkTequila)
