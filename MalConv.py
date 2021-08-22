@@ -9,7 +9,6 @@ class MalConv(nn.Module):
     def __init__(self, out_size=2, channels=128, window_size=512, embd_size=8):
         super(MalConv, self).__init__()
         self.embd = nn.Embedding(257, embd_size, padding_idx=0)
-
         self.window_size = window_size
 
         self.conv_1 = nn.Conv1d(embd_size, channels, window_size, stride=window_size, bias=True)
@@ -21,7 +20,7 @@ class MalConv(nn.Module):
         self.fc_2 = nn.Linear(channels, out_size)
 
     def forward(self, x):
-        x = self.embd(x.long())
+        # x = self.embd(x.long()) Se si usa con test.py non va commentato mentre se si usa con gen_adversarial.py va commentato
         x = torch.transpose(x, -1, -2)
 
         cnn_value = self.conv_1(x)
