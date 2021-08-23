@@ -1,3 +1,5 @@
+import os
+
 import ember
 import lightgbm as lgb  # Gradient Boosting
 import shap
@@ -11,7 +13,8 @@ import lief
 import json
 import torch
 
-from MalConv import MalConv
+# from MalConvModel import MalConvModel
+from MalConvModel import MalConvModel
 from ember import PEFeatureExtractor
 import torch.nn.functional as nn
 import tensorflow as tf
@@ -143,30 +146,13 @@ def modify_pe():
     add_section_strings(tequila_bin, "license", 'all.txt')
 
 
-class MalConvModel(object):
-    def __init__(self, model_path, thresh=0.5, name='malconv'):
-        self.model = MalConv(channels=256, window_size=512, embd_size=8).train()
-        weights = torch.load(model_path, map_location='cpu')
-        self.model.load_state_dict(weights['model_state_dict'])
-        self.thresh = thresh
-        self.__name__ = name
-
-    def predict(self, bytez):
-        _inp = torch.from_numpy(np.frombuffer(bytez, dtype=np.uint8)[np.newaxis, :])
-        with torch.no_grad():
-            outputs = nn.softmax(self.model(_inp), dim=-1)
-        # return outputs.detach().numpy()[0, 1] > self.thresh
-        return outputs.detach().numpy()[0, 1]
-
-
-MALCONV_MODEL_PATH = 'malconv/malconv.checkpoint'
 
 
 def get_predict_models(name, bytez):
     # thresholds are set here
     print('--------------------')
     print(f'PE name: {name}')
-    malconv = MalConvModel(MALCONV_MODEL_PATH, thresh=0.5)
+    malconv = MalConvModel('malconv/malconv.checkpoint', thresh=0.5)
     malconv_score = malconv.predict(bytez)
     print(f'{malconv.__name__}: {malconv_score} {malconv_score > malconv.thresh}')
 
@@ -179,24 +165,26 @@ def get_predict_models(name, bytez):
 
 
 def example():
-    # WinRAR = open('WinRAR-x64-602it.exe', "rb").read()
+    WinRAR = open('WinRAR-x64-602it.exe', "rb").read()
     # DarkTequila = open('Win32.DarkTequila.exe', "rb").read()
+    # print('File size:', os.path.getsize('Win32.DarkTequila.exe'))
     # AddConstantTequila = open('output/AddConstantTequila.exe', "rb").read()
     # AddString_1_Tequila = open('output/AddString_1_Tequila.exe', "rb").read()
     # AddString_2_Tequila = open('output/AddString_2_Tequila.exe', "rb").read()
     # AddString_3_Tequila = open('output/AddString_3_Tequila.exe', "rb").read()
     # AddString_4_Tequila = open('output/AddString_4_Tequila.exe', "rb").read()
-    AddString_5_Tequila = open('output/AddString_5_Tequila.exe', "rb").read()
-    new_DarkTequila = open('new_DarkTequila.exe', "rb").read()
-    #
+    # AddString_5_Tequila = open('output/AddString_5_Tequila.exe', "rb").read()
+    new_DarkTequila = open('mod_5.exe', "rb").read()
+
     # get_predict_models('WinRAR', WinRAR)
     # get_predict_models('DarkTequila', DarkTequila)
+
     # get_predict_models('AddConstantTequila', AddConstantTequila)
     # get_predict_models('AddString_1_Tequila', AddString_1_Tequila)
     # get_predict_models('AddString_2_Tequila', AddString_2_Tequila)
     # get_predict_models('AddString_3_Tequila', AddString_3_Tequila)
     # get_predict_models('AddString_4_Tequila', AddString_4_Tequila)
-    get_predict_models('AddString_5_Tequila', AddString_5_Tequila)
+    # get_predict_models('AddString_5_Tequila', AddString_5_Tequila)
     get_predict_models('new_DarkTequila', new_DarkTequila)
 
 

@@ -3,11 +3,11 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
-class MalConv(nn.Module):
+class MalConv_ForADV(nn.Module):
     # trained to minimize cross-entropy loss
     # criterion = nn.CrossEntropyLoss()
     def __init__(self, out_size=2, channels=128, window_size=512, embd_size=8):
-        super(MalConv, self).__init__()
+        super(MalConv_ForADV, self).__init__()
         self.embd = nn.Embedding(257, embd_size, padding_idx=0)
         self.embd.requires_grad_(True)
         self.window_size = window_size
@@ -22,9 +22,6 @@ class MalConv(nn.Module):
 
     def forward(self, x):
         # print('Input:', x.shape)
-        x = self.embd(x.long())
-
-        # print('Post embd:', x.shape)
         x = torch.transpose(x, -1, -2)
         # print('Post transpose:', x.shape)
         cnn_value = self.conv_1(x)
