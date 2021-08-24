@@ -11,7 +11,7 @@ from tqdm import tqdm
 from MalConv_ForADV import MalConv_ForADV
 
 kernel_size = 512
-eps = 0.7
+eps = 0.8
 target = 0  # benign
 loop_num = 10
 
@@ -51,7 +51,7 @@ def fgsm_attack():
     malconv = MalConv_ForADV(channels=256, window_size=512, embd_size=8)
     weights = torch.load('malconv/malconv.checkpoint', map_location='cpu')
     malconv.load_state_dict(weights['model_state_dict'])
-    malconv.eval()
+    # malconv.eval()
 
 
     # Compute payload size
@@ -69,6 +69,8 @@ def fgsm_attack():
 
     # Make input file x as numpy array
     x = np.frombuffer(bytez, dtype=np.uint8)
+
+    loss_values = []
 
     for i in range(loop_num):
         print('[{}]'.format(str(i + 1)))
@@ -88,7 +90,28 @@ def fgsm_attack():
 
         # Compute loss
         loss = nn.CrossEntropyLoss()(results, label)
+        # ----
+        if i == 0:
+            loss_values.append(loss.item())
+
+
         print('Loss: {:.5g}'.format(loss.item()))
+
+
+        # Make a decision on evasion rates
+        if results[0][0] > 0.5:
+            print('Evasion rates: {:.5g}'.format(results[0][0].item()), '\n')
+            aes_name = 'mod_5.exe'
+
+            with open(aes_name, 'wb') as out:
+                aes = np.concatenate([x, perturbation.astype(np.uint8)])
+
+                for s in aes:
+                    out.write(struct.pack('B', int(s)))
+
+            print(aes_name, ' has been created.')
+
+            return
 
         # Update
         loss.backward()
@@ -105,29 +128,24 @@ def fgsm_attack():
         embd_x = embd_x.detach().numpy()
         embd_x[0][-payload_size:] = perturbation  # update perturbation
 
-        print('Reconstruction phase:')
-        perturbation = reconstruction(torch.from_numpy(perturbation), m).detach().numpy()
-        print('sum of perturbation: ', perturbation.sum(), '\n')  # for debug
+        # ----
+        # if the loss value is the same we are in a local minimum, so we regenerate the
+        # perturbation vector
+        if i != 0 and loss_values[-1] == loss.item():
+            print('Regeneration of the perturbation')
+            perturbation = np.random.randint(0, 256, payload_size, dtype=np.uint8)
+        else:
+            if i != 0:
+                loss_values.append(loss.item())
 
-        # Generate perturbation file
-        with open('perturb.bin', 'wb') as out:
-            for s in perturbation:
-                out.write(struct.pack('B', int(s)))
+            print('Reconstruction phase:')
+            perturbation = reconstruction(torch.from_numpy(perturbation), m).detach().numpy()
+            print('sum of perturbation: ', perturbation.sum(), '\n')  # for debug
 
-        # Make a decision on evasion rates
-        if results[0][0] > 0.5:
-            print('Evasion rates: {:.5g}'.format(results[0][0].item()), '\n')
-            aes_name = 'mod_5.exe'
-
-            with open(aes_name, 'wb') as out:
-                aes = np.concatenate([x, perturbation.astype(np.uint8)])
-
-                for s in aes:
+            # Generate perturbation file
+            with open('perturb.bin', 'wb') as out:
+                for s in perturbation:
                     out.write(struct.pack('B', int(s)))
-
-            print(aes_name, ' has been created.')
-
-            return
 
     print('Adversarial Examples is not found.')
 
