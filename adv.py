@@ -95,7 +95,7 @@ def fgsm_attack():
             loss_values.append(loss.item())
 
 
-        print('Loss: {:.5g}'.format(loss.item()))
+        print('Loss: {}'.format(loss.item()))
 
 
         # Make a decision on evasion rates
@@ -123,7 +123,9 @@ def fgsm_attack():
         perturbation = embed(torch.from_numpy(perturbation).long())
 
         # Compute perturbation
-        perturbation = (perturbation - eps * grad_sign).detach().numpy()
+        perturbation_candidate = (perturbation - eps * grad_sign).detach().numpy()
+        print("Perturbation change: {}".format(np.abs(perturbation.detach().numpy()-perturbation_candidate).sum()))
+        perturbation = perturbation_candidate
 
         embd_x = embd_x.detach().numpy()
         embd_x[0][-payload_size:] = perturbation  # update perturbation
