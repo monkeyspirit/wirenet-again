@@ -1,1 +1,4 @@
 **/__pycache__**
+/venv/*
+/mod_5.exe
+/perturb.bin
