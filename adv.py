@@ -81,7 +81,6 @@ def fgsm_attack():
         embd_x = embed(inp_adv.long()).detach() # Z
         embd_x.requires_grad = True
         # embd_x.retain_grad()
-
         outputs = malconv(embd_x)
         results = F.softmax(outputs, dim=1)
 
