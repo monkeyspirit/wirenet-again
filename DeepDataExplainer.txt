@@ -1,4 +1,3 @@
-DeepDataExplainer.txt
 Net-Worm.Win32.Kido.zip
 Trojan.NSIS.Win32.zip
 Trojan.Win32.Bechiro.BCD.zip
